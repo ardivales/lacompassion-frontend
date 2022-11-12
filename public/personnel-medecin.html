@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - La Compassion</title>
+
+    <!-- Iconscout/Unicons CDN Link -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Boxicons CDN Link -->
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Tailwind CSS Output CSS -->
+
+    <link href="./css/output.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="lc-sidebar peer fixed h-full w-[250px] px-[14px] py-[10px] bg-white border-r-2 z-[100] transition-[left, width] duration-300 ease-linear">
+
+        <header class="relative">
+
+            <div class="flex items-center">
+
+                <span class="min-w-[60px] flex items-center justify-center rounded-md">
+
+                    <img src="./images/logo.svg" alt="logo la compassion" class="h-10 w-10 rounded-md min-w-[60px]">
+
+                </span>
+
+                <span class="lc-logo-text text-slate-500 text-lg font-medium whitespace-nowrap transition-all duration-300 ease-in-out">La Compassion</span>
+
+            </div>
+
+            <i class="bx bx-chevron-right lc-toggle absolute top-1/2 -right-7 flex items-center justify-center h-[25px] w-[25px] bg-green-500 text-white cursor-pointer text-[22px] -translate-y-1/2 rotate-180 rounded-full"></i>
+
+        </header>
+
+        <div class="h-[calc(100%-55px)] flex flex-col justify-between overflow-hidden">
+
+            <div class="mt-10">
+
+                <ul class="space-y-[10px]">
+
+                    <li class="flex items-center h-[50px]">
+
+                        <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+        
+                            <i class="bx bx-home-alt flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+        
+                            <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Tableau de bord</span>
+        
+                        </a>
+        
+                    </li>
+
+                    <li class="flex items-center h-[50px]">
+
+                        <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+        
+                            <i class="bx bx-group flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+        
+                            <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Patients</span>
+        
+                        </a>
+        
+                    </li>
+
+                    <li class="flex items-center h-[50px]">
+
+                        <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+                            
+                            <i class="bx bxs-user-detail flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+        
+                            <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Médécins</span>
+        
+                        </a>
+        
+                    </li>
+
+                    <li class="flex items-center h-[50px]">
+
+                        <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+                            
+                            <i class="bx bx-shield-quarter flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+        
+                            <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Assureur</span>
+        
+                        </a>
+        
+                    </li>
+
+                    <li class="flex items-center h-[50px]">
+
+                        <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+        
+                            <i class="bx bx-bell flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+        
+                            <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Notifications</span>
+        
+                        </a>
+        
+                    </li>
+
+                    <li class="flex items-center h-[50px]">
+
+                        <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+        
+                            <i class="bx bx-cog flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+        
+                            <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Paramètres</span>
+        
+                        </a>
+        
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <ul class="space-y-[10px]">
+
+                <li class="flex items-center h-[50px]">
+
+                    <a href="#" class="group flex items-center h-full w-full bg-transparent hover:bg-green-100 rounded-md transition-all ease-in-out duration-300">
+    
+                        <i class="bx bx-log-out flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
+    
+                        <span class="text-[17px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Déconnexion</span>
+    
+                    </a>
+    
+                </li>
+
+                <li class="relative flex items-center h-[50px] bg-green-100 rounded-md transition-all ease-in-out duration-300">
+
+                    <div class="h-[50px] w-[60px]">
+
+                        <i class="bx bx-moon absolute flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 rounded-md lc-moon"></i>
+
+                        <i class="bx bx-sun absolute flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 rounded-md opacity-0 lc-sun"></i>
+
+                    </div>
+
+                    <span class="lc-mode-text text-[17px] text-slate-500 group-hover:text-white font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Dark Mode</span>
+
+                    <div class="absolute right-0 h-full min-w-[60px] flex items-center justify-center cursor-pointer rounded-md transition-all ease-in-out duration-300before:">
+
+                        <span class="lc-switch relative h-[22px] w-10 bg-gray-300 rounded-[25px] before:absolute before:top-1/2 before:left-[5px] before:h-[15px] before:w-[15px] before:bg-white before:rounded-full before:-translate-y-1/2 before:transition-all before:ease-in-out before:duration-300"></span>
+
+                    </div>
+    
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <section class="relative top-0 left-[250px] peer-[.lc-close]:left-[88px] min-h-screen w-[calc(100%-250px)] peer-[.lc-close]:w-[calc(100%-88px)] bg-white transition-all ease-in-out duration-300">
+
+        <nav class="lc-admin-head fixed left-[250px] flex center justify-end h-20 w-[calc(100%-250px)] bg-white z-[90] px-4 md:px-10 shadow-md transition-all ease-in-out duration-300">
+
+            <div class="flex items-center space-x-2 md:space-x-4">
+
+                <div class="flex items-center pr-3 md:pr-6 border-r space-x-3 md:space-x-4">
+
+                    <a href="#" class="relative h-7 w-7 md:h-10 md:w-10 flex items-center justify-center border-2 text-slate-500 rounded-full">
+
+                        <i class="bx bx-bell text-md md:text-2xl"></i>
+
+                        <span class="absolute -right-1 -top-1 h-3 w-3 md:h-4 md:w-4 flex items-center justify-center bg-blue-500 text-white text-[9px] md:text-xs rounded-full">6</span>
+
+                    </a>
+
+                </div>
+
+                <div class="flex items-center space-x-3 md:space-x-5">
+
+                    <p class="text-xs md:text-sm font-semibold text-slate-700">Winboy TheMenace</p>
+    
+                    <img class="h-6 w-6 md:h-10 md:w-10 rounded-full ring-2 ring-offset-4 ring-blue-500" src="./images/profil-1.png" alt="">
+    
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="px-4 md:px-10 py-28">
+
+            <div class="space-y-8">
+
+                <h3 class="text-lg sm:text-2xl text-slate-700 font-semibold">Listes des médecins</h3>
+
+                <button id="newDoctor" class="lc-modal-show flex items-center text-green-500 hover:bg-green-100 pr-4 hover:pl-4 py-2 rounded-md transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Nouveau docteur</span></button>
+
+                <div class="flex flex-wrap md:flex-nowrap items-center justify-between">
+
+                    <label class="relative w-full md:w-96">
+
+                        <span class="absolute left-2 top-[56%] -translate-y-2/4 text-slate-500 text-xl"><i class='bx bx-search' ></i></span>
+
+                        <input type="text" class="w-full text-sm sm:text-base text-slate-500 pl-8 pr-6 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="Recherche">
+
+                    </label>
+
+                    <div class="w-full md:w-52 mt-4 md:mt-0 flex justify-end">
+
+                        <button class="lc-filter flex items-center text-gray-500 hover:bg-gray-200 border px-[15px] h-10 py-1.5 rounded-md transition-all ease-in-out duration-300"><i class='bx bx-filter text-lg pr-1' ></i><span class="text-base">Filter</span></button>
+
+                    </div>
+
+                </div>
+
+                <div class="hidden lc-filter-container">
+
+                    <div class="block md:flex md:items-center md:justify-between md:space-x-4 space-y-4 md:space-y-0">
+
+                        <label class="block grow basis-full">
+    
+                            <span class="block text-sm font-semibold text-slate-700">Filter 1</span>
+    
+                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
+
+                                <option value="1">patient-1</option>
+
+                                <option value="2">patient-2</option>
+
+                                <option value="3">patient-3</option>
+
+                            </select>
+    
+                        </label>
+    
+                        <label class="block grow basis-full">
+    
+                            <span class="block text-sm font-semibold text-slate-700">Filter 2</span>
+    
+                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
+
+                                <option value="1">patient-1</option>
+
+                                <option value="2">patient-2</option>
+
+                                <option value="3">patient-3</option>
+
+                            </select>
+    
+                        </label>
+    
+                        <label class="block grow basis-full">
+    
+                            <span class="block text-sm font-semibold text-slate-700">Filter 3</span>
+    
+                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
+
+                                <option value="1">patient-1</option>
+
+                                <option value="2">patient-2</option>
+
+                                <option value="3">patient-3</option>
+
+                            </select>
+    
+                        </label>
+    
+                        <label class="block grow basis-full">
+    
+                            <span class="block text-sm font-semibold text-slate-700">Filter 4</span>
+
+                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
+
+                                <option value="1">patient-1</option>
+
+                                <option value="2">patient-2</option>
+
+                                <option value="3">patient-3</option>
+
+                            </select>
+    
+                        </label>
+    
+                    </div>
+
+                </div>
+
+                <div class="block w-full overflow-x-auto rounded-md">
+
+                    <table class="w-full mt-6">
+
+                        <tbody>
+
+                            <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+
+                                <td class="px-3 py-3">Images</td>
+                                <td class="px-3 py-3">Prénom</td>
+                                <td class="px-3 py-3">Nom</td>
+                                <td class="px-3 py-3">Status</td>
+                                <td class="px-3 py-3">Email</td>
+                                <td class="px-3 py-3"></td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-1.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded">Actif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button id="profile-1" class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-2.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-pink-100 text-pink-500 text-xs font-semibold rounded">Inactif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-3.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded">Actif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-4.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded">Actif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-5.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded">Actif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-6.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-pink-100 text-pink-500 text-xs font-semibold rounded">Inactif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-7.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-pink-100 text-pink-500 text-xs font-semibold rounded">Inactif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-8.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded">Actif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr class="group text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><img class="h-10 w-10 ring-2 ring-offset-2 ring-gray-200 group-hover:ring-blue-500 rounded-full transition-all ease-in-out duration-300" src="./images/profil-9.png" alt=""></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100"><span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded">Actif</span></td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">winboy@gmail.com</td>
+                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
+
+                                    <div class="flex items-center space-x-1">
+
+                                        <button class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
+                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="lc-modal fixed right-0 top-0 h-full w-full sm:w-[400px] bg-white m-0-important p-5 opacity-0 pointer-events-none z-[999999] transition-all ease-in-out duration-300" data-lc-target="profile-1">
+
+                    <span class="lc-modal-icon-cross absolute right-3 top-3 flex items-center justify-center h-[30px] w-[30px] hover:bg-gray-200 text-slate-500 text-2xl cursor-pointer rounded-full transition-all ease-in-out duration-300" data-lc-target="#profile-1"><i class='bx bx-x'></i></span>
+
+                    <div class="mt-14 space-y-12 max-h-[564px] overflow-auto">
+
+                        <div class="relative">
+
+                            <h4 class="relative text-[13px] uppercase tracking-[.3px] text-slate-400 font-extrabold mb-8 pb-0.5 before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:bg-gray-200">Profile</h4>
+
+                            <div class="flex flex-col items-center justify-center text-center">
+
+                                <div class="relative">
+
+                                    <img class="h-w-32 w-32 ring-2 ring-offset-2 ring-gray-200 rounded-full" src="./images/profil-1.png" alt="">
+
+                                    <span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-2 py-0.5 bg-emerald-100 text-emerald-500 text-xs font-semibold rounded-xl">Actif</span>
+
+                                </div>
+    
+                                <h3 class="mt-6 text-slate-900 text-lg font-semibold">Winboy TheMenace</h3>
+    
+                                <span class="text-xs text-slate-400"><i class="uil uil-location-point text-pink-500 pr-1"></i> Cotonou, Akpakpa</span>
+    
+                                <span class="text-slate-500 text-sm mt-6">winboy@gmail.com | (+229) 98 39 38 02</span>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="relative">
+
+                            <h4 class="relative text-[13px] uppercase tracking-[.3px] text-slate-400 font-extrabold mb-8 pb-0.5 before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:bg-gray-200">Jour de travail</h4>
+
+                            <div class="space-y-5">
+
+                                <div class="relative text-sm text-slate-600 pl-6 before:absolute before:left-0 before:top-1.5 before:h-2 before:w-2 before:bg-blue-500 before:rounded-full after:absolute after:left-[3px] after:top-[19px] after:h-[22px] after:w-[1px] after:bg-slate-400 after:last:hidden">Lundi : 07h - 18h</div>
+                                <div class="relative text-sm text-slate-600 pl-6 before:absolute before:left-0 before:top-1.5 before:h-2 before:w-2 before:bg-blue-500 before:rounded-full after:absolute after:left-[3px] after:top-[19px] after:h-[22px] after:w-[1px] after:bg-slate-400 after:last:hidden">Jeudi : 18h - 00h</div>
+                                <div class="relative text-sm text-slate-600 pl-6 before:absolute before:left-0 before:top-1.5 before:h-2 before:w-2 before:bg-blue-500 before:rounded-full after:absolute after:left-[3px] after:top-[19px] after:h-[22px] after:w-[1px] after:bg-slate-400 after:last:hidden">vendredi : 18h - 00h</div>
+        
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="lc-modal-overlay fixed left-0 top-0 h-full w-full bg-black/50 m-0-important opacity-0 pointer-events-none z-[99999] transition-all ease-in-out duration-300" data-lc-target="profile-1"></div>
+
+                <div class="lc-modal fixed left-1/2 top-1/2 h-full sm:h-auto w-full sm:max-w-xl bg-white m-0-important opacity-0 pointer-events-none z-[999999] -translate-x-1/2 -translate-y-1/2 rounded-md transition-all ease-in-out duration-300" data-lc-target="newDoctor">
+
+                    <span class="lc-modal-icon-cross absolute right-3 top-3 flex items-center justify-center h-[30px] w-[30px] hover:bg-gray-200 text-slate-500 text-2xl cursor-pointer rounded-full transition-all ease-in-out duration-300" data-lc-target="#newDoctor"><i class='bx bx-x'></i></span>
+
+                    <form class="p-5 max-h-[564px] overflow-auto">
+
+                        <h2 class="text-lg text-slate-700 font-medium text-center mb-8">Enregistrer un medecin</h2>
+
+                        <div class="space-y-4 sm:space-y-6">
+
+                            <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+
+                                <label class="block w-auto sm:grow sm:basis-full">
+
+                                    <span class="block text-sm font-medium text-slate-500">Prénom</span>
+            
+                                    <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+            
+                                </label>
+
+                                <label class="block w-auto sm:grow sm:basis-full">
+
+                                    <span class="block text-sm font-medium text-slate-500">Nom</span>
+            
+                                    <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+            
+                                </label>
+
+                            </div>
+
+                            <label class="relative block">
+
+                                <span class="block text-sm font-medium text-slate-500">Email</span>
+
+                                <span class="absolute top-[70%] right-0 pr-2 text-slate-500 text-xl -translate-y-1/2"><i class='bx bx-envelope' ></i></span>
+        
+                                <input type="email" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+        
+                            </label>
+
+                            <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+
+                                <label class="block sm:grow sm:basis-full">
+
+                                    <span class="block text-sm font-medium text-slate-500">Nom d'utilisateur</span>
+            
+                                    <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+            
+                                </label>
+
+                                <label class="block sm:grow sm:basis-full">
+
+                                    <span class="block text-sm font-medium text-slate-500">Tél</span>
+            
+                                    <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+            
+                                </label>
+
+                            </div>                            
+
+                            <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+
+                                <label class="relative block sm:grow sm:basis-full lc-form-group">
+
+                                    <span class="block text-sm font-medium text-slate-500">Mot de passe</span>
+    
+                                    <span class="lc-form-pass absolute top-[70%] right-0 pr-2 cursor-pointer text-slate-500 text-xl -translate-y-1/2"><i class='uil uil-eye-slash' ></i></span>
+            
+                                    <input type="password" class="lc-form-field w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+            
+                                </label>
+
+                                <label class="block sm:grow sm:basis-full">
+
+                                    <span class="block text-sm font-medium text-slate-500">Adresse</span>
+            
+                                    <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+            
+                                </label>
+
+                            </div>
+
+                            <button class="w-full bg-blue-500 hover:bg-blue-600 shadow-md text-white text-base sm:text-lg font-medium py-2 sm:py-2.5 rounded-md transition-all duration-300">Enregistrer</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="lc-modal-overlay fixed left-0 top-0 h-full w-full bg-black/50 m-0-important opacity-0 pointer-events-none z-[99999] transition-all ease-in-out duration-300" data-lc-target="newDoctor"></div>
+
+                <div class="flex items-center justify-center">
+
+                    <ul class="flex flex-wrap mt-10">
+
+                        <li class="text-lg sm:text-2xl mb-[14px] sm:mb-[18px] mr-4 sm:mr-8"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300"><i class='bx bx-chevron-left' ></i></a></li>
+
+                        <li class="text-sm sm:text-base mb-[14px] sm:mb-[18px]"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300">1</a></li>
+                        <li class="text-sm sm:text-base mb-[14px] sm:mb-[18px]"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300">2</a></li>
+                        <li class="text-sm sm:text-base mb-[14px] sm:mb-[18px]"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300">3</a></li>
+                        <li class="text-sm sm:text-base mb-[14px] sm:mb-[18px]"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300">4</a></li>
+                        <li class="text-sm sm:text-base mb-[14px] sm:mb-[18px]"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300">5</a></li>
+                        <li class="text-sm sm:text-base mb-[14px] sm:mb-[18px]"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300">6</a></li>
+
+                        <li class="text-lg sm:text-2xl mb-[14px] sm:mb-[18px] ml-4 sm:ml-8"><a href="#" class="flex items-center justify-center h-10 w-10 hover:bg-gray-200 text-slate-500 rounded-full transition-all ease-in-out duration-300"><i class='bx bx-chevron-right' ></i></a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+<!-- JQuery CDN Link -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- My Own Js -->
+
+<script src="../src/script.js"></script>
+
+</body>
+</html>

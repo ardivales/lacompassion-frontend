@@ -17,4 +17,7 @@
   .shadow-none-important {
     box-shadow: none !important;
   }
+  .m-0-important {
+    margin: 0 !important;
+  }
 }
