@@ -30,6 +30,8 @@
 
         $(".lc-form-pass").click(showPass);
 
+        $(".lc-form-pass-confirm").click(showPass);
+
         /***** ===== Show Password Script End ===== *****/
 
 
@@ -97,6 +99,8 @@
         });
 
         /***** ===== Toggle Menu Script End ===== *****/
+
+
 
         /**
          =================================================
@@ -176,6 +180,45 @@
           });
 
         /***** ===== Modal Script End ===== *****/
+
+
+
+        /**
+         =================================================
+         Profile Available Script Begin
+         =================================================
+         +*/
+
+         $(document).on("click", "#addAvailable", function(e) {
+
+            const $targetLinePromo = $('.lc-available-row');
+    
+                var $lastRepeatingGroup = $targetLinePromo.last();
+    
+                setTimeout(function() {
+    
+                    let $cloneLastTarget = $lastRepeatingGroup.clone(true);
+    
+                    $cloneLastTarget.find("input").val("");
+    
+                    $cloneLastTarget.insertAfter($lastRepeatingGroup);
+    
+                }, 100);
+    
+            });
+    
+            $(".lc-available-delete").click(function() {
+    
+                if($('.lc-available-row').length < 2) {
+                    return;
+                }
+    
+    
+                $(this).closest(".lc-available-row").remove();
+    
+            });
+
+        /***** ===== Profile Available Script End ===== *****/
 
     });
 
