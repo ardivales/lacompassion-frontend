@@ -20,4 +20,7 @@
   .m-0-important {
     margin: 0 !important;
   }
+  .before-left-5-important {
+    left: 1.25rem !important;
+  }
 }

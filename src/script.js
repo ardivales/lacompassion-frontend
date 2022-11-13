@@ -42,9 +42,9 @@
 
         $(".lc-switch").click(function() {
 
-            $(this).toggleClass("before:left-5");
+            $(this).toggleClass("before:before-left-5-important");
 
-            if($(this).hasClass("before:left-5")) {
+            if($(this).hasClass("before:before-left-5-important")) {
 
                 $(".lc-mode-text").text("Light Mode");
 
