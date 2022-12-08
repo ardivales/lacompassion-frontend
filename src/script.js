@@ -84,15 +84,15 @@
 
             if($(".lc-sidebar").hasClass("lc-close")) {
 
-                $(".lc-sidebar").addClass("md:w-[88px] w-[250px]");
+                $(".lc-sidebar").addClass("md:w-[78px] w-[250px]");
 
-                $(".lc-sidebar").removeClass("md:w-[250px] w-[88px]");
+                $(".lc-sidebar").removeClass("md:w-[250px] w-[78px]");
 
             } else {
 
-                $(".lc-sidebar").removeClass("md:w-[88px] w-[250px]");
+                $(".lc-sidebar").removeClass("md:w-[78px] w-[250px]");
 
-                $(".lc-sidebar").addClass("md:w-[250px] w-[88px]");
+                $(".lc-sidebar").addClass("md:w-[250px] w-[78px]");
 
             }
         
