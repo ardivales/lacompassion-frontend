@@ -8,6 +8,38 @@
   html {
     font-family: Poppins, sans-serif;
   }
+
+  /**
+  =================================================
+  Scroll Bar Style Begin
+  =================================================
+  +*/
+
+  /* ::-webkit-scrollbar {
+    @apply bg-green-50;
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-green-100;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-green-200;
+  } */
+
+  /***** ===== Scroll Bar Style End ===== *****/
+
 }
 
 @layer utilities {

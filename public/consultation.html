@@ -41,7 +41,7 @@
 
         </header>
 
-        <div class="h-[calc(100%-55px)] flex flex-col justify-between overflow-y-scroll">
+        <div class="h-[calc(100%-55px)] flex flex-col justify-between overflow-x-hidden overflow-y-scroll">
 
             <div class="mt-10">
 
@@ -102,7 +102,7 @@
                             
                             <i class="bx bx-file flex items-center justify-center h-full min-w-[60px] text-xl text-slate-500 group-hover:text-green-500 rounded-md transition-all ease-in-out duration-300"></i>
         
-                            <span class="text-[13px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Examens/Consulatiton</span>
+                            <span class="text-[13px] text-slate-500 group-hover:text-green-500 font-semibold whitespace-nowrap transition-all ease-in-out duration-300">Acts</span>
         
                         </a>
         
@@ -246,282 +246,81 @@
 
             <div class="space-y-8">
 
-                <h3 class="text-lg sm:text-2xl text-slate-700 font-semibold">Patient Winb</h3>
+                <h3 class="text-lg sm:text-2xl text-slate-700 font-semibold">Patient Winboy</h3>
 
-                <button id="newPatient" class="lc-modal-show flex items-center text-green-500 hover:bg-green-100 pr-4 hover:pl-4 py-2 rounded-md transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter patient</span></button>
+                <ul class="relative flex flex-col sm:flex-row space-x-0 sm:space-x-1 md:space-x-2 space-y-2 sm:space-y-0">
 
-                <div class="flex flex-wrap md:flex-nowrap items-center justify-between">
+                    <li class=""><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-base text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Fiche patient</a></li>
 
-                    <label class="relative w-full md:w-96">
+                    <li class=""><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Parcours de soins</a></li>
 
-                        <span class="absolute left-2 top-[56%] -translate-y-2/4 text-slate-500 text-xl"><i class='bx bx-search' ></i></span>
+                    <li class=""><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Bons</a></li>
 
-                        <input type="text" class="w-full text-sm sm:text-base text-slate-500 pl-8 pr-6 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="Recherche">
+                </ul>
 
-                    </label>
+                <div class="border p-4 rounded-md">
 
-                    <div class="w-full md:w-52 mt-4 md:mt-0 flex justify-end">
+                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
 
-                        <button class="lc-filter flex items-center text-gray-500 hover:bg-gray-200 border px-[15px] h-10 py-1.5 rounded-md transition-all ease-in-out duration-300"><i class='bx bx-filter text-lg pr-1' ></i><span class="text-base">Filter</span></button>
+                        <div class="col-span-2 space-y-1 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
 
-                    </div>
+                            <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Identifiant unique</h3>
 
-                </div>
-
-                <div class="hidden lc-filter-container">
-
-                    <div class="block md:flex md:items-center md:justify-between md:space-x-4 space-y-4 md:space-y-0">
-
-                        <label class="block grow basis-full">
-    
-                            <span class="block text-sm font-semibold text-slate-700">Filter 1</span>
-    
-                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
-
-                                <option value="1">patient-1</option>
-
-                                <option value="2">patient-2</option>
-
-                                <option value="3">patient-3</option>
-
-                            </select>
-    
-                        </label>
-    
-                        <label class="block grow basis-full">
-    
-                            <span class="block text-sm font-semibold text-slate-700">Filter 2</span>
-    
-                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
-
-                                <option value="1">patient-1</option>
-
-                                <option value="2">patient-2</option>
-
-                                <option value="3">patient-3</option>
-
-                            </select>
-    
-                        </label>
-    
-                        <label class="block grow basis-full">
-    
-                            <span class="block text-sm font-semibold text-slate-700">Filter 3</span>
-    
-                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
-
-                                <option value="1">patient-1</option>
-
-                                <option value="2">patient-2</option>
-
-                                <option value="3">patient-3</option>
-
-                            </select>
-    
-                        </label>
-    
-                        <label class="block grow basis-full">
-    
-                            <span class="block text-sm font-semibold text-slate-700">Filter 4</span>
-
-                            <select class="w-full text-slate-500 text-sm mt-1 border-none ring-1 ring-gray-200 focus:ring-gray-200 focus:shadow-md placeholder-slate-400 rounded-md">
-
-                                <option value="1">patient-1</option>
-
-                                <option value="2">patient-2</option>
-
-                                <option value="3">patient-3</option>
-
-                            </select>
-    
-                        </label>
-    
-                    </div>
-
-                </div>
-
-                <div class="block w-full overflow-x-auto rounded-md">
-
-                    <table class="w-full mt-6">
-
-                        <tbody>
-
-                            <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
-
-                                <td class="px-3 py-3">Prénom</td>
-                                <td class="px-3 py-3">Nom</td>
-                                <td class="px-3 py-3">Profession</td>
-                                <td class="px-3 py-3">Assurance</td>
-                                <td class="px-3 py-3 text-right">Age</td>
-                                <td class="px-3 py-3">Tél</td>
-                                <td class="px-3 py-3">Adresse</td>
-                                <td class="px-3 py-3"></td>
-
-                            </tr>
-
-                            <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
-
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Winboy</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">TheMenace</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Developer</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-center">NSIA</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">22</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">+229 87 90 76 54</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Cotonou, Littoral</td>
-                                <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100">
-
-                                    <div class="flex items-center space-x-1">
-
-                                        <a href="./consultation.html" class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-list-plus'></i></a>
-                                        <button id="profile-1" class="lc-modal-show flex items-center justify-center h-8 w-8 hover:bg-gray-200 hover:text-slate-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='uil uil-eye' ></i></button>
-                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-amber-100 hover:text-amber-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-edit-alt' ></i></button>
-                                        <button class="flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class='bx bx-trash' ></i></button>
-
-                                    </div>
-
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-
-                <div class="lc-modal fixed right-0 top-0 h-full w-full sm:w-[400px] bg-gray-50 m-0-important p-5 opacity-0 pointer-events-none z-[999999] transition-all ease-in-out duration-300" data-lc-target="profile-1">
-
-                    <span class="lc-modal-icon-cross absolute right-3 top-3 flex items-center justify-center h-[30px] w-[30px] hover:bg-gray-200 text-slate-500 text-2xl cursor-pointer rounded-full transition-all ease-in-out duration-300" data-lc-target="#profile-1"><i class='bx bx-x'></i></span>
-
-                    <div class="mt-14 space-y-12 max-h-[564px] overflow-auto">
-
-                        <div class="relative">
-
-                            <h4 class="relative text-[13px] uppercase tracking-[.3px] text-slate-400 font-extrabold mb-4 pb-0.5 before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:bg-gray-200">Profile</h4>
-
-                            <span class="flex items-center mb-8">
-
-                                <span class="block h-[5px] w-[5px] bg-pink-500 mr-1 rounded-full"></span>
-
-                                <span class="text-sm text-slate-500 font-medium">Patient</span>
-
-                            </span>
-
-                            <div class="flex flex-col items-center justify-center text-center">
-
-                                <div class="relative">
-
-                                    <img class="h-w-32 w-32 ring-2 ring-offset-2 ring-gray-200 rounded-full" src="./images/avatar-placeholder.png" alt="avatar placeholder">
-
-                                </div>
-
-                                <span class="mt-6 mb-3 text-xs text-slate-500 uppercase">Developer</span>
-    
-                                <h3 class="text-slate-900 text-lg font-semibold">Winboy TheMenace ~ <span class="text-sm">22 ans</span></h3>
-    
-                                <span class="text-xs text-slate-400"><i class="uil uil-location-point text-pink-500 pr-1"></i> Cotonou, Littoral</span>
-    
-                                <span class="text-slate-500 text-sm mt-6">winboy@gmail.com | (+229) 98 39 38 02</span>
-
-                                <div class="w-full space-y-2 mt-6 text-slate-500">
-
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-sm font-medium">Sexe:</span>
-                                        <span class="">Masculin</span>
-                                    </div>
-
-                                    <div class="flex items-center justify-between">
-                                        <span class="text-sm font-medium">Assurance:</span>
-                                        <span class="text-blue-500">NSIA</span>
-                                    </div>
-
-                                </div>
-
-                                <div class="w-full text-left mt-6">
-                                    <a href="./images/profil-1.png" class="text-blue-500 text-sm hover:underline transition-all ease-in-out duration-300">Voir la fiche de consentement patient.</a>
-                                </div>
-        
-                            </div>
+                            <span class="block uppercase">F239884b45</span>
 
                         </div>
 
-                    </div>
+                        <div class="col-span-6">
 
-                </div>
+                            <form action="" class="space-y-6 py-5">
 
-                <div class="lc-modal-overlay fixed left-0 top-0 h-full w-full bg-black/50 m-0-important opacity-0 pointer-events-none z-[99999] transition-all ease-in-out duration-300" data-lc-target="profile-1"></div>
+                                <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Informations patient</h4>
 
-                <div class="lc-modal fixed left-1/2 top-1/2 h-full sm:h-auto w-full sm:max-w-xl bg-white m-0-important opacity-0 pointer-events-none z-[999999] -translate-x-1/2 -translate-y-1/2 rounded-none sm:rounded-md transition-all ease-in-out duration-300" data-lc-target="newPatient">
+                                <div class="block space-y-5 sm:space-y-0 sm:grid sm:grid-cols-4 xl:grid-cols-12 gap-4">
 
-                    <span class="lc-modal-icon-cross absolute right-3 top-3 flex items-center justify-center h-[30px] w-[30px] hover:bg-gray-200 text-slate-500 text-2xl cursor-pointer rounded-full transition-all ease-in-out duration-300" data-lc-target="#newPatient"><i class='bx bx-x'></i></span>
-
-                    <form class="h-full py-5">
-
-                        <h2 class="text-lg text-slate-700 font-medium text-center mb-8">Enregistrer un patient</h2>
-
-                        <div class="pb-5 px-5 h-full max-h-[calc(100%-10%)] sm:max-h-[500px] overflow-auto">
-
-                            <div class="space-y-4 sm:space-y-6">
-
-                                <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+                                    <label class="block col-span-1 xl:col-span-2">
+            
+                                        <span class="block text-sm font-medium text-slate-500">Titre</span>
     
-                                    <label class="block w-auto sm:grow sm:basis-full">
+                                        <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
     
-                                        <span class="block text-sm font-medium text-slate-500">Prénom</span>
-                
-                                        <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+                                            <option value="Mr">Mr</option>
+            
+                                            <option value="Mme">Mme</option>
+            
+                                        </select>
                 
                                     </label>
-    
-                                    <label class="block w-auto sm:grow sm:basis-full">
-    
+
+                                    <label class="block col-span-6 xl:col-span-3">
+            
                                         <span class="block text-sm font-medium text-slate-500">Nom</span>
                 
                                         <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
                 
                                     </label>
-    
+
+                                    <label class="block col-span-7">
+            
+                                        <span class="block text-sm font-medium text-slate-500">Prénom</span>
+                
+                                        <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+                
+                                    </label>
+
                                 </div>
-    
-                                <label class="relative block">
-    
-                                    <span class="block text-sm font-medium text-slate-500">Email</span>
-    
-                                    <span class="absolute top-[70%] right-0 pr-2 text-slate-500 text-xl -translate-y-1/2"><i class='bx bx-envelope' ></i></span>
+
+                                <div class="space-y-5 sm:space-y-0 sm:flex sm:space-x-4">
             
-                                    <input type="email" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
-            
-                                </label>
+                                    <label class="block w-auto sm:grow sm:basis-full">
     
-                                <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
-    
-                                    <label class="block sm:grow sm:basis-full">
-    
-                                        <span class="block text-sm font-medium text-slate-500">Age</span>
+                                        <span class="block text-sm font-medium text-slate-500">Email</span>
                 
                                         <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
                 
                                     </label>
     
-                                    <label class="block sm:grow sm:basis-full">
-    
-                                        <span class="block text-sm font-medium text-slate-500">Sexe</span>
-    
-                                        <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
-    
-                                            <option value="M">M</option>
-            
-                                            <option value="F">F</option>
-            
-                                        </select>
-                
-                                    </label>
-    
-                                </div>
-    
-                                <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
-    
-                                    <label class="block sm:grow sm:basis-full">
+                                    <label class="block w-auto sm:grow sm:basis-full">
     
                                         <span class="block text-sm font-medium text-slate-500">Profession</span>
                 
@@ -529,9 +328,35 @@
                 
                                     </label>
     
-                                    <label class="block sm:grow sm:basis-full">
+                                </div>
+
+                                <div class="space-y-5 sm:space-y-0 sm:flex sm:space-x-4">
+            
+                                    <label class="block w-auto sm:grow sm:basis-full">
     
-                                        <span class="block text-sm font-medium text-slate-500">Type d'assurance</span>
+                                        <span class="block text-sm font-medium text-slate-500">Contact</span>
+                
+                                        <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+                
+                                    </label>
+    
+                                    <label class="block w-auto sm:grow sm:basis-full">
+    
+                                        <span class="block text-sm font-medium text-slate-500">Adresse</span>
+                
+                                        <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+                
+                                    </label>
+    
+                                </div>
+
+                                <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Autres</h4>
+
+                                <div class="space-y-5 sm:space-y-0 sm:flex sm:space-x-4">
+
+                                    <label class="block w-auto sm:grow sm:basis-full">
+            
+                                        <span class="block text-sm font-medium text-slate-500">Assurée par</span>
     
                                         <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
     
@@ -543,63 +368,95 @@
                 
                                     </label>
     
-                                </div>
+                                    <label class="block w-auto sm:grow sm:basis-full">
     
-                                <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
-    
-                                    <label class="block sm:grow sm:basis-full">
-    
-                                        <span class="block text-sm font-medium text-slate-500">Adresse</span>
-                
-                                        <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
-                
-                                    </label>
-    
-                                    <label class="block sm:grow sm:basis-full">
-    
-                                        <span class="block text-sm font-medium text-slate-500">Tél</span>
+                                        <span class="block text-sm font-medium text-slate-500">Médécin traitant</span>
                 
                                         <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
                 
                                     </label>
     
                                 </div>
+
+                                <div class="space-y-5 sm:space-y-0 sm:flex sm:space-x-4">
+
+                                    <label class="block w-auto sm:grow sm:basis-full">
+            
+                                        <span class="block text-sm font-medium text-slate-500">Antécédents familiaux</span>
     
-                                <div class="space-y-4">
+                                        <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
     
+                                            <option value="Grippe">Grippe</option>
+            
+                                            <option value="Cancer">Cancer</option>
+            
+                                        </select>
+                
+                                    </label>
+    
+                                    <label class="block w-auto sm:grow sm:basis-full">
+    
+                                        <span class="block text-sm font-medium text-slate-500">Antécédents médicaux</span>
+                
+                                        <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
+            
+                                            <option value="Cancer">Cancer</option>
+    
+                                            <option value="Grippe">Grippe</option>
+            
+                                        </select>
+                
+                                    </label>
+    
+                                </div>
+
+                                <div class="space-y-3">
+
                                     <span class="block text-sm font-medium text-slate-500">Fiche de consentement</span>
-    
+
                                     <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-9">
             
                                         <div class="shrink-0">
-        
-                                            <img class="h-20 w-20 sm:h-24 sm:w-24 object-cover rounded-full ring-2 ring-offset-4 ring-gray-200 hover:ring-green-200 transition-all ease-in-out duration-300" src="./images/fiche_placeholder.jpeg" alt="Fiche consentement" />
-        
+
+                                            <img class="h-20 w-20 sm:h-24 sm:w-24 object-cover rounded-sm ring-2 ring-offset-4 ring-gray-200 hover:ring-green-200 transition-all ease-in-out duration-300" src="./images/fiche_placeholder.jpeg" alt="Fiche consentement">
+
                                         </div>
-        
+
                                         <label class="block">
-        
-                                            <span class="sr-only">Choose profile photo</span>
-        
+
+                                            <span class="sr-only">Consentement</span>
+
                                             <input type="file" class="block w-full text-xs sm:text-sm text-slate-500 file:text-xs sm:file:text-sm file:font-semibold file:py-2 file:px-4 file:bg-green-50 file:text-green-700 file:rounded-full file:border-0 file:mr-4 hover:file:bg-green-100">
-        
+
                                         </label>
-        
+
                                     </div>
-    
+
                                 </div>
-    
-                                <button class="w-full bg-blue-500 hover:bg-blue-600 shadow-md text-white text-base sm:text-lg font-medium py-2 sm:py-2.5 rounded-md transition-all duration-300">Enregistrer</button>
-    
-                            </div>
+
+                                <label class="relative block">
+
+                                    <span class="block text-sm font-medium text-slate-500">Autres à préciser</span>
+            
+                                    <textarea class="w-full h-32 text-slate-500 resize-none py-2 pl-3 pr-9 focus:bg-transparent border-none ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md"></textarea>
+            
+                                </label>
+
+                                <div class="space-x-1">
+
+                                    <button type="submit" class="bg-green-500 hover:bg-green-600 shadow-md text-white text-sm mt-12 font-medium px-6 py-2.5 rounded-md transition-all duration-300">Enrégistrer</button>
+
+                                    <button type="button" class="hover:bg-green-100 text-slate-500 hover:text-green-500 text-sm mt-12 font-medium px-6 py-2.5 rounded-md transition-all duration-300">Imprimer</button>
+
+                                </div>
+
+                            </form>
 
                         </div>
 
-                    </form>
+                    </div>
 
                 </div>
-
-                <div class="lc-modal-overlay fixed left-0 top-0 h-full w-full bg-black/50 m-0-important opacity-0 pointer-events-none z-[99999] transition-all ease-in-out duration-300" data-lc-target="newPatient"></div>
 
             </div>
 
