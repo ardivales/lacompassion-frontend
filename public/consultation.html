@@ -260,7 +260,7 @@
 
                 <div class="border p-4 rounded-md">
 
-                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+                    <!-- <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
 
                         <div class="col-span-2 space-y-1 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
 
@@ -453,6 +453,189 @@
                             </form>
 
                         </div>
+
+                    </div> -->
+
+                    <div class="md:px-5 py-4">
+
+                        <button type="button" class="bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle consulation</button>
+
+                        <!-- <form action="" class="space-y-5">
+
+                            <label class="block">
+    
+                                <span class="block text-sm font-medium text-slate-500">Motif <span class="text-red-600">*</span></span>
+                    
+                                <input type="text" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+        
+                            </label>
+    
+                            <div class="block space-y-5">
+        
+                                <h3 class="text-lg sm:text-xl text-slate-700 font-medium">Examens</h3>
+        
+                                <div class="block w-full overflow-x-auto rounded-md">
+        
+                                    <table class="w-full">
+                
+                                        <tbody class="lc-available-tbody">
+        
+                                            <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+        
+                                                <td class="px-3 py-3">Acts</td>
+                                                <td class="px-3 py-3 whitespace-nowrap">Résultat œil droit</td>
+                                                <td class="px-3 py-3 whitespace-nowrap">Résultat œil gauche</td>
+                                                <td class="px-3 py-3">Fichier</td>
+                                                <td class="px-3 py-3"></td>
+                
+                                            </tr>
+        
+                                            <tr class="lc-available-row">
+        
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <select class="w-[200px] text-slate-500 py-[0.522rem] px-3 text-sm border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
+                
+                                                        <option value="Acculté visuele">Acculté visuele</option>
+                        
+                                                        <option value="Fond d'œil">Fond d'œil</option>
+                        
+                                                    </select>
+    
+                                                </td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 bg-gray-100 text-sm focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 rounded-md"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 bg-gray-100 text-sm focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 rounded-md"></td>
+                                                <td class="p-3 border-b border-b-gray-100">
+        
+                                                    <div class="min-w-[320px] lg:min-w-full flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-9">
+                
+                                                        <label class="block">
+                
+                                                            <span class="sr-only">Fichier</span>
+                
+                                                            <input type="file" class="block w-full text-xs sm:text-sm text-slate-500 file:text-xs sm:file:text-sm file:font-semibold file:py-2 file:px-4 file:bg-green-50 file:text-green-700 file:rounded-full file:border-0 file:mr-4 hover:file:bg-green-100">
+                
+                                                        </label>
+                
+                                                    </div>
+        
+                                                </td>
+
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <div class="flex items-center justify-center space-x-1">
+        
+                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+        
+                                                    </div>
+        
+                                                </td>
+        
+                                            </tr>
+        
+                                        </tbody>
+        
+                                    </table>
+        
+                                </div>
+        
+                                <div class="flex justify-end">
+        
+                                    <button id="addAvailable" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter</span></button>
+        
+                                </div>
+        
+                            </div>
+    
+                            <label class="relative block">
+    
+                                <span class="block text-sm font-medium text-slate-500">Diagonotics <span class="text-red-600">*</span></span>
+        
+                                <textarea class="w-full h-32 text-slate-500 resize-none py-2 pl-3 pr-9 focus:bg-transparent border-none ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md"></textarea>
+        
+                            </label>
+
+                            <div class="block space-y-5">
+        
+                                <h3 class="text-lg sm:text-xl text-slate-700 font-medium">Ordonnances</h3>
+        
+                                <div class="block w-full overflow-x-auto rounded-md">
+        
+                                    <table class="w-full border-collapse border-2 border-slate-400">
+                
+                                        <tbody class="">
+
+                                            <tr class="text-sm sm:text-base text-black font-medium">
+                                                <td class="px-3 py-3 border border-slate-400"></td>
+                                                <th scope="col" colspan="3" class="px-3 py-3 uppercase border border-slate-400">OD</th>
+                                                <th scope="col" colspan="3" class="px-3 py-3 uppercase border border-slate-400">OG</th>
+                                            </tr>
+
+                                            <tr class="text-xs sm:text-sm">
+                                                <th scope="row" class="border border-slate-400 p-3"></th>
+                                                <td class="min-w-[112px] text-center border border-slate-400 p-3 text-slate-700">Sphère</td>
+                                                <td class="min-w-[112px] text-center border border-slate-400 p-3 text-slate-700">Cylindre</td>
+                                                <td class="min-w-[112px] text-center border border-slate-400 p-3 text-slate-700">Axe</td>
+                                                <td class="min-w-[112px] text-center border border-slate-400 p-3 text-slate-700">Sphère</td>
+                                                <td class="min-w-[112px] text-center border border-slate-400 p-3 text-slate-700">Cylindre</td>
+                                                <td class="min-w-[112px] text-center border border-slate-400 p-3 text-slate-700">Axe</td>
+                                            </tr>
+
+                                            <tr class="text-xs sm:text-sm">
+                                                <th scope="row" class="h-[60px] border border-slate-400 p-3 text-slate-700 text-left whitespace-nowrap">Vision de loin</th>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                            </tr>
+
+                                            <tr class="text-xs sm:text-sm">
+                                                <th  scope="row" class="h-[60px] border border-slate-400 p-3 text-slate-700 text-left whitespace-nowrap">Vision toute distance</th>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                            </tr>
+
+                                            <tr class="text-xs sm:text-sm">
+                                                <th  scope="row" class="h-[60px] border border-slate-400 p-3 text-slate-700 text-left whitespace-nowrap">Vision de près</th>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                                <td class="h-[60px] border border-slate-400 p-1"><input type="text" class="h-full w-full text-slate-500 px-2 py-0 text-center text-xs focus:bg-transparent border-none focus:ring-0 focus:ring-transparent"></td>
+                                            </tr>
+        
+                                        </tbody>
+        
+                                    </table>
+        
+                                </div>
+        
+                            </div>
+    
+                            <label class="block">
+        
+                                <span class="block text-sm font-medium text-slate-500">Prochain rendez-vous</span>
+                    
+                                <input type="date" class="w-full text-slate-500 py-2 pl-3 pr-9 bg-gray-100 focus:bg-transparent border-none focus:ring-1 focus:ring-gray-200 placeholder-slate-400 mt-1 rounded-md">
+        
+                            </label>
+
+                            <div>
+
+                                <button type="submit" class="bg-green-500 hover:bg-green-600 shadow-md text-white text-sm font-medium px-6 py-2.5 mt-8 rounded-md transition-all duration-300">Cloturer consulation</button>
+
+                            </div>
+
+                        </form> -->
+
+                        <div></div>
 
                     </div>
 
