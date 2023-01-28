@@ -460,7 +460,7 @@
 
                         <button type="button" class="bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle consulation</button>
 
-                        <!-- <form action="" class="space-y-5">
+                        <form action="" class="space-y-5 mb-6">
 
                             <label class="block">
     
@@ -496,7 +496,7 @@
     
                                                     <select class="w-[200px] text-slate-500 py-[0.522rem] px-3 text-sm border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
                 
-                                                        <option value="Acculté visuele">Acculté visuele</option>
+                                                        <option value="Acculté visuelle">Acculté visuelle</option>
                         
                                                         <option value="Fond d'œil">Fond d'œil</option>
                         
@@ -633,9 +633,731 @@
 
                             </div>
 
-                        </form> -->
+                        </form>
 
-                        <div></div>
+                        <div class="space-y-4">
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-slate-900 font-bold px-0 py-4">Consultation du 22/01/2023 à 07:15</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+
+                                        <div class="col-span-2 space-y-16 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
+                
+                                            <div class="flex flex-row md:flex-col space-y-0 md:space-y-5">
+
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Prochain Rendez-vous</h3>
+                    
+                                                    <span class="block font-extrabold uppercase">9/10/23 - 14h00</span>
+    
+                                                </div>
+    
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Motif</h3>
+                    
+                                                    <span class="block text-sm text-slate-800 uppercase">Rougeur, Purit</span>
+    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="space-y-1">
+
+                                                <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Diagonotics</h3>
+                
+                                                <p class="block text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam minima delectus neque facilis.</p>
+
+                                            </div>
+                
+                                        </div>
+
+                                        <div class="col-span-6">
+
+                                            <div class="space-y-8">
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Examens</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Acculté visuelle</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Fond d'œil</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Ordonnances</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-slate-900 font-bold px-0 py-4">Consultation du 21/01/2023 à 09:45</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+
+                                        <div class="col-span-2 space-y-16 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
+                
+                                            <div class="flex flex-row md:flex-col space-y-0 md:space-y-5">
+
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Prochain Rendez-vous</h3>
+                    
+                                                    <span class="block font-extrabold uppercase">9/10/23 - 14h00</span>
+    
+                                                </div>
+    
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Motif</h3>
+                    
+                                                    <span class="block text-sm text-slate-800 uppercase">Rougeur, Purit</span>
+    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="space-y-1">
+
+                                                <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Diagonotics</h3>
+                
+                                                <p class="block text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam minima delectus neque facilis.</p>
+
+                                            </div>
+                
+                                        </div>
+
+                                        <div class="col-span-6">
+
+                                            <div class="space-y-8">
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Examens</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Acculté visuelle</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Fond d'œil</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Ordonnances</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-slate-900 font-bold px-0 py-4">Consultation du 20/01/2023 à 20:18</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+
+                                        <div class="col-span-2 space-y-16 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
+                
+                                            <div class="flex flex-row md:flex-col space-y-0 md:space-y-5">
+
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Prochain Rendez-vous</h3>
+                    
+                                                    <span class="block font-extrabold uppercase">9/10/23 - 14h00</span>
+    
+                                                </div>
+    
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Motif</h3>
+                    
+                                                    <span class="block text-sm text-slate-800 uppercase">Rougeur, Purit</span>
+    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="space-y-1">
+
+                                                <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Diagonotics</h3>
+                
+                                                <p class="block text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam minima delectus neque facilis.</p>
+
+                                            </div>
+                
+                                        </div>
+
+                                        <div class="col-span-6">
+
+                                            <div class="space-y-8">
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Examens</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Acculté visuelle</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Fond d'œil</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Ordonnances</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-slate-900 font-bold px-0 py-4">Consultation du 19/01/2023 à 19:00</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+
+                                        <div class="col-span-2 space-y-16 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
+                
+                                            <div class="flex flex-row md:flex-col space-y-0 md:space-y-5">
+
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Prochain Rendez-vous</h3>
+                    
+                                                    <span class="block font-extrabold uppercase">9/10/23 - 14h00</span>
+    
+                                                </div>
+    
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Motif</h3>
+                    
+                                                    <span class="block text-sm text-slate-800 uppercase">Rougeur, Purit</span>
+    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="space-y-1">
+
+                                                <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Diagonotics</h3>
+                
+                                                <p class="block text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam minima delectus neque facilis.</p>
+
+                                            </div>
+                
+                                        </div>
+
+                                        <div class="col-span-6">
+
+                                            <div class="space-y-8">
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Examens</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Acculté visuelle</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Fond d'œil</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Ordonnances</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-slate-900 font-bold px-0 py-4">Consultation du 18/01/2023 à 12:30</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+
+                                        <div class="col-span-2 space-y-16 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
+                
+                                            <div class="flex flex-row md:flex-col space-y-0 md:space-y-5">
+
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Prochain Rendez-vous</h3>
+                    
+                                                    <span class="block font-extrabold uppercase">9/10/23 - 14h00</span>
+    
+                                                </div>
+    
+                                                <div class="space-y-1">
+
+                                                    <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Motif</h3>
+                    
+                                                    <span class="block text-sm text-slate-800 uppercase">Rougeur, Purit</span>
+    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="space-y-1">
+
+                                                <h3 class="text-xs font-black text-slate-500 tracking-wide uppercase">Diagonotics</h3>
+                
+                                                <p class="block text-sm text-slate-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam minima delectus neque facilis.</p>
+
+                                            </div>
+                
+                                        </div>
+
+                                        <div class="col-span-6">
+
+                                            <div class="space-y-8">
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Examens</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Acculté visuelle</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="uppercase text-slate-600 text-sm font-bold">Fond d'œil</span>
+
+                                                            <ul class="pt-2 pl-6 space-y-2">
+
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil droit: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc">Résultat œil gauche: <span class="text-base font-extrabold">Bien</span></li>
+                                                                <li class="text-slate-500 text-sm list-disc"><a href="#" class="underline text-blue-500"> voir le fichier</a></li>
+
+                                                            </ul>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                                <div class="space-y-6">
+
+                                                    <h4 class="text-sm font-bold text-slate-500 tracking-wide border-b pb-3">Ordonnances</h4>
+
+                                                    <ul class="relative pl-10 space-y-3">
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon goutte:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                        <li class="relative before:content-[''] before:absolute before:-left-[23px] before:top-[19px] before:h-[calc(100%-4px)] before:w-[2px] before:bg-green-400 before:last:hidden">
+
+                                                            <i class='bx bx-check-circle absolute -left-8 top-[2px] h-5 w-5 flex items-center justify-center text-[22px] text-green-500' ></i>
+                                                            
+                                                            <span class="text-slate-600 text-sm"><span class="font-semibold">Moxicon DX collyre:</span> 1 goutte et soir pendant 15jours</span>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 

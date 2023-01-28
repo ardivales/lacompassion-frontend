@@ -220,6 +220,72 @@
 
         /***** ===== Profile Available Script End ===== *****/
 
+        /**
+         =================================================
+         Accordion Card Script Begin
+         =================================================
+         +*/
+
+         function meRemoveOpen() {
+
+            $(".lc-accordion-item").each((index, item) => {
+
+                if(!$(item).hasClass("lc-accordion-open")) {
+
+                    $(item).removeClass("lc-accordion-open");
+
+                    $(item).removeClass("pb-5");
+
+                    $(item).find(".lc-accordion-header").removeClass("border-b mb-5");
+
+                    $(item).find(".lc-accordion-body").css("height", 0);
+
+                    $(item).find(".lc-accordion-icon").removeClass("rotate-180");
+
+                }
+
+            });
+
+        }
+
+        $(".lc-accordion-header").click(function (e) {
+
+            var $targetItem = $(this).closest(".lc-accordion-item");
+
+            var $targetBody = $targetItem.find(".lc-accordion-body");
+
+            $targetItem.siblings(".lc-accordion-open").removeClass("lc-accordion-open");
+
+            $($targetItem).toggleClass("lc-accordion-open");
+
+            if($($targetItem).hasClass("lc-accordion-open")) {
+
+                $targetItem.addClass("pb-5");
+
+                $(this).addClass("border-b mb-5");
+
+                $targetBody.css("height", $targetBody[0].scrollHeight);
+
+                $targetItem.find(".lc-accordion-icon").addClass("rotate-180");
+
+            } else {
+
+                $targetItem.removeClass("pb-5");
+
+                $(this).removeClass("border-b mb-5");
+
+                $targetBody.css("height", 0);
+
+                $targetItem.find(".lc-accordion-icon").removeClass("rotate-180");
+
+            }
+
+            meRemoveOpen($targetItem);
+
+        });
+
+        /***** ===== Accordion Card Script End ===== *****/
+
     });
 
 }(jQuery));
