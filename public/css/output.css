@@ -2516,6 +2516,10 @@ html {
 }
 
 @media (min-width: 575px){
+  .sm\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:mb-\[18px\]{
     margin-bottom: 18px;
   }
@@ -2643,6 +2647,11 @@ html {
   .sm\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:text-2xl{
@@ -2788,6 +2797,12 @@ html {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-16 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(4rem * var(--tw-space-y-reverse));
   }
 
   .md\:px-10{
