@@ -250,17 +250,17 @@
 
                 <ul class="relative flex flex-col sm:flex-row space-x-0 sm:space-x-1 md:space-x-2 space-y-2 sm:space-y-0">
 
-                    <li class=""><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-base text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Fiche patient</a></li>
+                    <li class="lc-tab" data-tab="fiche"><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-base text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Fiche patient</a></li>
 
-                    <li class=""><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Parcours de soins</a></li>
+                    <li class="lc-tab" data-tab="soins"><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Parcours de soins</a></li>
 
-                    <li class=""><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Bons</a></li>
+                    <li class="lc-tab" data-tab="bons"><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Bons</a></li>
 
                 </ul>
 
                 <div class="border p-4 rounded-md">
 
-                    <!-- <div class="grid grid-cols-2 xl:grid-cols-8 gap-5">
+                    <div class="lc-tab-target grid grid-cols-2 xl:grid-cols-8 gap-5" data-tab="fiche">
 
                         <div class="col-span-2 space-y-1 pb-3 xl:pb-0 xl:border-r pr-0 xl:pr-3 py-2">
 
@@ -454,9 +454,9 @@
 
                         </div>
 
-                    </div> -->
+                    </div>
 
-                    <div class="md:px-5 py-4">
+                    <div class="lc-tab-target md:px-5 py-4 hidden" data-tab="soins">
 
                         <button type="button" class="bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle consulation</button>
 
@@ -683,7 +683,7 @@
                 
                                         </div>
 
-                                        <div class="col-span-6">
+                                        <div class="col-span-6 space-y-8">
 
                                             <div class="space-y-8">
 
@@ -772,6 +772,8 @@
                                                 </div>
                                             
                                             </div>
+
+                                            <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
 
                                         </div>
 
@@ -827,7 +829,7 @@
                 
                                         </div>
 
-                                        <div class="col-span-6">
+                                        <div class="col-span-6 space-y-8">
 
                                             <div class="space-y-8">
 
@@ -916,6 +918,8 @@
                                                 </div>
                                             
                                             </div>
+
+                                            <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
 
                                         </div>
 
@@ -971,7 +975,7 @@
                 
                                         </div>
 
-                                        <div class="col-span-6">
+                                        <div class="col-span-6 space-y-8">
 
                                             <div class="space-y-8">
 
@@ -1060,6 +1064,8 @@
                                                 </div>
                                             
                                             </div>
+
+                                            <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
 
                                         </div>
 
@@ -1115,7 +1121,7 @@
                 
                                         </div>
 
-                                        <div class="col-span-6">
+                                        <div class="col-span-6 space-y-8">
 
                                             <div class="space-y-8">
 
@@ -1204,6 +1210,8 @@
                                                 </div>
                                             
                                             </div>
+
+                                            <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
 
                                         </div>
 
@@ -1259,7 +1267,7 @@
                 
                                         </div>
 
-                                        <div class="col-span-6">
+                                        <div class="col-span-6 space-y-8">
 
                                             <div class="space-y-8">
 
@@ -1349,7 +1357,637 @@
                                             
                                             </div>
 
+                                            <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
+
                                         </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lc-tab-target md:px-5 py-4 hidden" data-tab="bons">
+
+                        <button type="button" class="bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle Facture</button>
+
+                        <form action="" class="space-y-5 mb-6">
+    
+                            <div class="block space-y-5">
+        
+                                <div class="block w-full overflow-x-auto rounded-md">
+        
+                                    <table class="w-full">
+                
+                                        <tbody class="lc-available-tbody">
+        
+                                            <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+        
+                                                <td class="px-3 py-3">ACTS</td>
+                                                <td class="px-3 py-3 text-right">QTE</td>
+                                                <td class="px-3 py-3 text-right">P.U</td>
+                                                <td class="px-3 py-3 text-right">% PC</td>
+                                                <td class="px-3 py-3 text-right">TOTAL</td>
+                                                <td class="px-3 py-3 text-right">MT FACT</td>
+                                                <td class="px-3 py-3 text-right">MT PAYE</td>
+                                                <td class="px-3 py-3 text-right">RESTE</td>
+                                                <td class="px-3 py-3"></td>
+                
+                                            </tr>
+        
+                                            <tr class="lc-available-row">
+        
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <select class="w-[200px] text-slate-500 py-[0.522rem] px-3 text-sm border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
+                
+                                                        <option value="Acculté visuelle">Acculté visuelle</option>
+                        
+                                                        <option value="Fond d'œil">Fond d'œil</option>
+                        
+                                                    </select>
+    
+                                                </td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="1"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="0"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="10"></td>
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <div class="flex items-center justify-center space-x-1">
+        
+                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+        
+                                                    </div>
+        
+                                                </td>
+        
+                                            </tr>
+
+                                            <tr class="lc-available-row">
+        
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <select class="w-[200px] text-slate-500 py-[0.522rem] px-3 text-sm border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
+                
+                                                        <option value="Acculté visuelle">Acculté visuelle</option>
+                        
+                                                        <option value="Fond d'œil">Fond d'œil</option>
+                        
+                                                    </select>
+    
+                                                </td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="1"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="0"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="10"></td>
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <div class="flex items-center justify-center space-x-1">
+        
+                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+        
+                                                    </div>
+        
+                                                </td>
+        
+                                            </tr>
+
+                                            <tr class="lc-available-row">
+        
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <select class="w-[200px] text-slate-500 py-[0.522rem] px-3 text-sm border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
+                
+                                                        <option value="Acculté visuelle">Acculté visuelle</option>
+                        
+                                                        <option value="Fond d'œil">Fond d'œil</option>
+                        
+                                                    </select>
+    
+                                                </td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="1"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="0"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="25000"></td>
+                                                <td class="p-3 border-b border-b-gray-100"><input type="text" class="w-full text-slate-500 py-2 px-3 text-sm focus:bg-transparent border-none text-right ring-1 focus:ring-2 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" placeholder="10"></td>
+                                                <td class="p-3 border-b border-b-gray-100">
+    
+                                                    <div class="flex items-center justify-center space-x-1">
+        
+                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+        
+                                                    </div>
+        
+                                                </td>
+        
+                                            </tr>
+        
+                                        </tbody>
+        
+                                    </table>
+        
+                                </div>
+        
+                                <div class="flex justify-end">
+        
+                                    <button id="addAvailable" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter</span></button>
+        
+                                </div>
+        
+                            </div>
+
+                            <div>
+
+                                <button type="submit" class="bg-green-500 hover:bg-green-600 shadow-md text-white text-sm font-medium px-6 py-2.5 mt-8 rounded-md transition-all duration-300">Ajouter</button>
+
+                            </div>
+
+                        </form>
+
+                        <div class="space-y-4">
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-sm sm:text-base text-slate-900 font-bold px-0 py-4">Facturation du 22/01/2023 à 07:15</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="space-y-6">
+
+                                        <div class="block w-full overflow-x-auto rounded-md">
+        
+                                            <table class="w-full">
+                        
+                                                <tbody class="lc-available-tbody">
+                
+                                                    <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+                
+                                                        <td class="px-3 py-3">Date</td>
+                                                        <td class="px-3 py-3">ACTS</td>
+                                                        <td class="px-3 py-3 text-right">QTE</td>
+                                                        <td class="px-3 py-3 text-right">P.U</td>
+                                                        <td class="px-3 py-3 text-right">% PC</td>
+                                                        <td class="px-3 py-3 text-right">Total</td>
+                                                        <td class="px-3 py-3 text-right">MT FACT</td>
+                                                        <td class="px-3 py-3 text-right">MT PAYE</td>
+                                                        <td class="px-3 py-3 text-right">RESTE</td>
+                        
+                                                    </tr>
+                
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="">
+    
+                                                        <td colspan="9" class="px-3 py-3 sm:py-6"></td>
+                
+                                                    </tr>
+
+                                                    <tr class="text-xs sm:text-sm text-slate-500 font-medium bg-gray-50">
+    
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-slate-500 text-sm">Reste à payer: <span class="text-base text-red-500 font-extrabold">0</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap">Mt. Brut: <span class="text-base text-blue-500 font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. payé: <span class="text-base text-black font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="3" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. Fact: <span class="text-base text-green-500 font-extrabold">60.000 FCFA</span></td>
+                
+                                                    </tr>
+                
+                                                </tbody>
+                
+                                            </table>
+                
+                                        </div>
+    
+                                        <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-sm sm:text-base text-slate-900 font-bold px-0 py-4">Facturation du 22/01/2023 à 07:15</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="space-y-6">
+
+                                        <div class="block w-full overflow-x-auto rounded-md">
+        
+                                            <table class="w-full">
+                        
+                                                <tbody class="lc-available-tbody">
+                
+                                                    <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+                
+                                                        <td class="px-3 py-3">Date</td>
+                                                        <td class="px-3 py-3">ACTS</td>
+                                                        <td class="px-3 py-3 text-right">QTE</td>
+                                                        <td class="px-3 py-3 text-right">P.U</td>
+                                                        <td class="px-3 py-3 text-right">% PC</td>
+                                                        <td class="px-3 py-3 text-right">Total</td>
+                                                        <td class="px-3 py-3 text-right">MT FACT</td>
+                                                        <td class="px-3 py-3 text-right">MT PAYE</td>
+                                                        <td class="px-3 py-3 text-right">RESTE</td>
+                        
+                                                    </tr>
+                
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="">
+    
+                                                        <td colspan="9" class="px-3 py-3 sm:py-6"></td>
+                
+                                                    </tr>
+
+                                                    <tr class="text-xs sm:text-sm text-slate-500 font-medium bg-gray-50">
+    
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-slate-500 text-sm">Reste à payer: <span class="text-base text-red-500 font-extrabold">0</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap">Mt. Brut: <span class="text-base text-blue-500 font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. payé: <span class="text-base text-black font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="3" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. Fact: <span class="text-base text-green-500 font-extrabold">60.000 FCFA</span></td>
+                
+                                                    </tr>
+                
+                                                </tbody>
+                
+                                            </table>
+                
+                                        </div>
+    
+                                        <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-sm sm:text-base text-slate-900 font-bold px-0 py-4">Facturation du 22/01/2023 à 07:15</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="space-y-6">
+
+                                        <div class="block w-full overflow-x-auto rounded-md">
+        
+                                            <table class="w-full">
+                        
+                                                <tbody class="lc-available-tbody">
+                
+                                                    <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+                
+                                                        <td class="px-3 py-3">Date</td>
+                                                        <td class="px-3 py-3">ACTS</td>
+                                                        <td class="px-3 py-3 text-right">QTE</td>
+                                                        <td class="px-3 py-3 text-right">P.U</td>
+                                                        <td class="px-3 py-3 text-right">% PC</td>
+                                                        <td class="px-3 py-3 text-right">Total</td>
+                                                        <td class="px-3 py-3 text-right">MT FACT</td>
+                                                        <td class="px-3 py-3 text-right">MT PAYE</td>
+                                                        <td class="px-3 py-3 text-right">RESTE</td>
+                        
+                                                    </tr>
+                
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="">
+    
+                                                        <td colspan="9" class="px-3 py-3 sm:py-6"></td>
+                
+                                                    </tr>
+
+                                                    <tr class="text-xs sm:text-sm text-slate-500 font-medium bg-gray-50">
+    
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-slate-500 text-sm">Reste à payer: <span class="text-base text-red-500 font-extrabold">0</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap">Mt. Brut: <span class="text-base text-blue-500 font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. payé: <span class="text-base text-black font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="3" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. Fact: <span class="text-base text-green-500 font-extrabold">60.000 FCFA</span></td>
+                
+                                                    </tr>
+                
+                                                </tbody>
+                
+                                            </table>
+                
+                                        </div>
+    
+                                        <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
+
+                                <header class="lc-accordion-header flex items-center justify-between cursor-pointer px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <span class="text-sm sm:text-base text-slate-900 font-bold px-0 py-4">Facturation du 22/01/2023 à 07:15</span>
+
+                                    <i class='lc-accordion-icon bx bxs-chevron-down flex items-center justify-center h-8 w-8 text-xl rounded-full hover:bg-gray-100 text-slate-500 transition-all ease-in-out duration-300'></i>
+
+                                </header>
+
+                                <div class="lc-accordion-body h-0 px-3 sm:px-6 py-0 transition-all ease-in-out duration-300">
+
+                                    <div class="space-y-6">
+
+                                        <div class="block w-full overflow-x-auto rounded-md">
+        
+                                            <table class="w-full">
+                        
+                                                <tbody class="lc-available-tbody">
+                
+                                                    <tr class="bg-slate-50 text-xs sm:text-sm text-slate-400 font-medium">
+                
+                                                        <td class="px-3 py-3">Date</td>
+                                                        <td class="px-3 py-3">ACTS</td>
+                                                        <td class="px-3 py-3 text-right">QTE</td>
+                                                        <td class="px-3 py-3 text-right">P.U</td>
+                                                        <td class="px-3 py-3 text-right">% PC</td>
+                                                        <td class="px-3 py-3 text-right">Total</td>
+                                                        <td class="px-3 py-3 text-right">MT FACT</td>
+                                                        <td class="px-3 py-3 text-right">MT PAYE</td>
+                                                        <td class="px-3 py-3 text-right">RESTE</td>
+                        
+                                                    </tr>
+                
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="group/table text-xs sm:text-sm text-slate-500 font-medium hover:bg-blue-50 transition-all ease-in-out duration-300">
+    
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">22/01/2023</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap">Fond d'œil</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">1</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">0</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-green-500">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-black">25000</td>
+                                                        <td class="px-3 py-3 sm:py-6 border-b border-b-gray-100 whitespace-nowrap text-right text-red-500">0</td>
+                
+                                                    </tr>
+
+                                                    <tr class="">
+    
+                                                        <td colspan="9" class="px-3 py-3 sm:py-6"></td>
+                
+                                                    </tr>
+
+                                                    <tr class="text-xs sm:text-sm text-slate-500 font-medium bg-gray-50">
+    
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-slate-500 text-sm">Reste à payer: <span class="text-base text-red-500 font-extrabold">0</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap">Mt. Brut: <span class="text-base text-blue-500 font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="2" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. payé: <span class="text-base text-black font-extrabold">60.000 FCFA</span></td>
+                                                        <td colspan="3" class="px-3 py-3 sm:py-6 whitespace-nowrap text-right">Mt. Fact: <span class="text-base text-green-500 font-extrabold">60.000 FCFA</span></td>
+                
+                                                    </tr>
+                
+                                                </tbody>
+                
+                                            </table>
+                
+                                        </div>
+    
+                                        <button type="button" class="bg-blue-500 hover:bg-blue-600 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Mettre à jour</button>
 
                                     </div>
 

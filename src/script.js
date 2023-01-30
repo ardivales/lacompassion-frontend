@@ -286,6 +286,42 @@
 
         /***** ===== Accordion Card Script End ===== *****/
 
+
+
+        /**
+         =================================================
+         Tabs Script Begin
+         =================================================
+         +*/
+
+         $(".lc-tab").click(function() {
+
+            var targetLi = $(this).attr("data-tab");
+
+            $(".lc-tab-target").addClass('hidden');
+
+                $(".lc-tab-target[data-tab='" + targetLi + "']").removeClass("hidden");
+
+            // $(".lc-tab-target").addClass('hidden');
+
+            // if (targetLi == "fiche") {
+
+                
+
+            // } else if (targetLi == "soins") {
+
+
+
+            // } else {
+
+
+
+            // }
+
+        });
+
+         /***** ===== Tabs Script End ===== *****/
+
     });
 
 }(jQuery));
