@@ -15,6 +15,10 @@
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Select2 CDN Link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <!-- Tailwind CSS Output CSS -->
 
     <link href="./css/output.css" rel="stylesheet">
@@ -250,7 +254,7 @@
 
                 <ul class="relative flex flex-col sm:flex-row space-x-0 sm:space-x-1 md:space-x-2 space-y-2 sm:space-y-0">
 
-                    <li class="lc-tab" data-tab="fiche"><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-base text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Fiche patient</a></li>
+                    <li class="lc-tab" data-tab="fiche"><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Fiche patient</a></li>
 
                     <li class="lc-tab" data-tab="soins"><a href="#" class="block text-center px-3 md:px-4 py-2 text-sm md:text-md text-gray-500 hover:text-slate-700 font-bold bg-gray-50 sm:bg-transparent hover:bg-gray-200 rounded-[25px] transition-all ease-in-out duration-300">Parcours de soins</a></li>
 
@@ -378,13 +382,13 @@
     
                                 </div>
 
-                                <div class="space-y-5 sm:space-y-0 sm:flex sm:space-x-4">
+                                <!--<div class="space-y-5 sm:space-y-0 sm:flex sm:space-x-4">
 
                                     <label class="block w-auto sm:grow sm:basis-full">
             
                                         <span class="block text-sm font-medium text-slate-500">Antécédents familiaux</span>
     
-                                        <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md">
+                                        <select class="w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" multiple="multiple">
     
                                             <option value="Grippe">Grippe</option>
             
@@ -408,7 +412,35 @@
                 
                                     </label>
     
-                                </div>
+                                </div>-->
+
+                                <label class="block">
+
+                                    <span class="block text-sm font-medium text-slate-500">Antécédents familiaux</span>
+
+                                    <select class="antecedent-familiaux w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" multiple="multiple">
+
+                                        <option value="Grippe">Grippe</option>
+
+                                        <option value="Cancer">Cancer</option>
+
+                                    </select>
+
+                                </label>
+
+                                <label class="block">
+
+                                    <span class="block text-sm font-medium text-slate-500">Antécédents médicaux</span>
+
+                                    <select class="antecedent-medicaux w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md" multiple="multiple">
+
+                                        <option value="Cancer">Cancer</option>
+
+                                        <option value="Grippe">Grippe</option>
+
+                                    </select>
+
+                                </label>
 
                                 <div class="space-y-3">
 
@@ -458,9 +490,9 @@
 
                     <div class="lc-tab-target md:px-5 py-4 hidden" data-tab="soins">
 
-                        <button type="button" class="bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle consulation</button>
+                        <button type="button" class="lc-new-consultation bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle consulation</button>
 
-                        <form action="" class="space-y-5 mb-6">
+                        <form action="" class="hidden lc-parcours-form space-y-5 mb-6">
 
                             <label class="block">
     
@@ -490,7 +522,7 @@
                 
                                             </tr>
         
-                                            <tr class="lc-available-row">
+                                            <tr class="lc-exam-row">
         
                                                 <td class="p-3 border-b border-b-gray-100">
     
@@ -525,7 +557,7 @@
     
                                                     <div class="flex items-center justify-center space-x-1">
         
-                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+                                                        <button type="button" class="lc-exam-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
         
                                                     </div>
         
@@ -541,7 +573,7 @@
         
                                 <div class="flex justify-end">
         
-                                    <button id="addAvailable" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter</span></button>
+                                    <button id="addExam" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter</span></button>
         
                                 </div>
         
@@ -804,7 +836,7 @@
 
                                         </tr>
 
-                                        <tr class="lc-available-row">
+                                        <tr class="lc-order-row">
 
                                             <td class="p-3 border-b border-b-gray-100">
 
@@ -823,7 +855,7 @@
 
                                                 <div class="flex items-center justify-center space-x-1">
 
-                                                    <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+                                                    <button type="button" class="lc-order-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
 
                                                 </div>
 
@@ -839,7 +871,7 @@
 
                                 <div class="flex justify-end">
 
-                                    <button id="addAvailable" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class="bx bxs-plus-circle pr-2"></i><span class="text-sm">Ajouter</span></button>
+                                    <button id="addOrder" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class="bx bxs-plus-circle pr-2"></i><span class="text-sm">Ajouter</span></button>
 
                                 </div>
 
@@ -867,13 +899,13 @@
 
                             <div>
 
-                                <button type="submit" class="bg-green-500 hover:bg-green-600 shadow-md text-white text-sm font-medium px-6 py-2.5 mt-8 rounded-md transition-all duration-300">Cloturer consulation</button>
+                                <button type="button" class="lc-close-parcours-forms bg-green-500 hover:bg-green-600 shadow-md text-white text-sm font-medium px-6 py-2.5 mt-8 rounded-md transition-all duration-300">Cloturer consulation</button>
 
                             </div>
 
                         </form>
 
-                        <div class="space-y-4">
+                        <div class="lc-consultation-container space-y-4">
 
                             <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
 
@@ -1811,9 +1843,9 @@
 
                     <div class="lc-tab-target md:px-5 py-4 hidden" data-tab="bons">
 
-                        <button type="button" class="bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle Facture</button>
+                        <button type="button" class="lc-new-invoice bg-green-500 hover:bg-green-600 mb-6 shadow-md text-white text-sm font-medium px-6 py-2.5 rounded-md transition-all duration-300">Nouvelle Facture</button>
 
-                        <form action="" class="space-y-5 mb-6">
+                        <form action="" class="hidden lc-bons-form space-y-5 mb-6">
     
                             <div class="block space-y-5">
         
@@ -1837,7 +1869,7 @@
                 
                                             </tr>
         
-                                            <tr class="lc-available-row">
+                                            <tr class="lc-bon-row">
         
                                                 <td class="p-3 border-b border-b-gray-100">
     
@@ -1861,7 +1893,7 @@
     
                                                     <div class="flex items-center justify-center space-x-1">
         
-                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+                                                        <button type="button" class="lc-bon-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
         
                                                     </div>
         
@@ -1869,7 +1901,7 @@
         
                                             </tr>
 
-                                            <tr class="lc-available-row">
+                                            <tr class="lc-bon-row">
         
                                                 <td class="p-3 border-b border-b-gray-100">
     
@@ -1893,7 +1925,7 @@
     
                                                     <div class="flex items-center justify-center space-x-1">
         
-                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+                                                        <button type="button" class="lc-bon-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
         
                                                     </div>
         
@@ -1901,7 +1933,7 @@
         
                                             </tr>
 
-                                            <tr class="lc-available-row">
+                                            <tr class="lc-bon-row">
         
                                                 <td class="p-3 border-b border-b-gray-100">
     
@@ -1925,7 +1957,7 @@
     
                                                     <div class="flex items-center justify-center space-x-1">
         
-                                                        <button type="button" class="lc-available-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
+                                                        <button type="button" class="lc-bon-delete flex items-center justify-center h-8 w-8 hover:bg-pink-100 hover:text-pink-500 text-lg rounded-full transition-all ease-in-out duration-300"><i class="bx bx-trash"></i></button>
         
                                                     </div>
         
@@ -1941,7 +1973,7 @@
         
                                 <div class="flex justify-end">
         
-                                    <button id="addAvailable" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter</span></button>
+                                    <button id="addBon" type="button" class="flex items-center text-blue-500 hover:bg-blue-100 pr-4 hover:pl-4 py-2 rounded-md disabled:opacity-75 transition-all ease-in-out duration-300"><i class='bx bxs-plus-circle pr-2' ></i><span class="text-sm">Ajouter</span></button>
         
                                 </div>
         
@@ -1949,13 +1981,13 @@
 
                             <div>
 
-                                <button type="submit" class="bg-green-500 hover:bg-green-600 shadow-md text-white text-sm font-medium px-6 py-2.5 mt-8 rounded-md transition-all duration-300">Ajouter</button>
+                                <button type="button" class="lc-close-bons-form bg-green-500 hover:bg-green-600 shadow-md text-white text-sm font-medium px-6 py-2.5 mt-8 rounded-md transition-all duration-300">Ajouter</button>
 
                             </div>
 
                         </form>
 
-                        <div class="space-y-4">
+                        <div class="lc-invoice-container space-y-4">
 
                             <div class="lc-accordion-item border rounded-md overflow-hidden hover:translate-y-[2px] transition-all ease-in-out duration-300">
 
@@ -2450,6 +2482,10 @@
 <!-- JQuery CDN Link -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- Select2 CDN Link -->
+
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <!-- My Own Js -->
 
