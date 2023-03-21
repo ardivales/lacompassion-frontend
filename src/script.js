@@ -4,6 +4,46 @@
 
         /**
          =================================================
+         Sticky Scroll Script Begin
+         =================================================
+         +*/
+
+        $(window).scroll(function() {
+
+            if (this.scrollY > 500) {
+
+                $('.tw-scroll-up-btn').removeClass("opacity-0 pointer-events-none bottom-0");
+                $('.tw-scroll-up-btn').addClass("opacity-1 pointer-events-auto bottom-6");
+
+            } else {
+
+                $('.tw-scroll-up-btn').removeClass("opacity-1 pointer-events-auto bottom-6");
+                $('.tw-scroll-up-btn').addClass("opacity-0 pointer-events-none bottom-0");
+
+            }
+
+        });
+
+        /***** ===== Sticky Scroll Script End ===== *****/
+
+        /**
+         =================================================
+         Slide-up Script Begin
+         =================================================
+         +*/
+
+        $('.tw-scroll-up-btn').click(function() {
+
+            $("html").animate({
+                scrollTop: 0,
+            });
+
+        });
+
+        /***** ===== Slide-up Script End ===== *****/
+
+        /**
+         =================================================
          Show Password Script Begin
          =================================================
          +*/
