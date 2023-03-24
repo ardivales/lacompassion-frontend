@@ -533,7 +533,15 @@
 
         $(".select2-selection--multiple").addClass("w-full text-slate-500 mt-1 py-2 border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md");
 
+        $(".select2-selection--single").addClass("w-full text-slate-500 mt-1 py-2 min-h-[37px] flex items-center border-none ring-1 ring-gray-200 focus:ring-gray-200 placeholder-slate-400 rounded-md");
+
+        $(".select2-selection--single").css("display", "flex");
+
+        $(".select2-selection__arrow").css("top", "9px");
+
         $(".select2-selection--multiple").css("border", "none");
+
+        $(".select2-selection--single").css("border", "none");
 
         /***** ===== Select 2 Script End ===== *****/
 
